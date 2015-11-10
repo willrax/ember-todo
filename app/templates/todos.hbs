@@ -1,0 +1,13 @@
+<h1> Hello </h1>
+
+<ul>
+{{#each model as |task|}}
+  <li>{{task.title}}</li>
+
+  <ul>
+    {{#each task.notes as |note|}}
+      <li>{{note.body}}</li>
+    {{/each}}
+  </ul>
+{{/each}}
+</ul>
